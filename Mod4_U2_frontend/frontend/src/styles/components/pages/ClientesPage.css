@@ -1,0 +1,15 @@
+.clientes{
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 2%; 
+    margin-right: 2%;
+}
+
+.clientes p{
+    width: 95%;
+}
+
+.clientes hr{
+    margin-left: 0px;
+    width: 95%;
+}

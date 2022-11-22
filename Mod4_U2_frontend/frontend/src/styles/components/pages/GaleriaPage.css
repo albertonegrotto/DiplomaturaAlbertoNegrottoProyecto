@@ -1,0 +1,16 @@
+.galeria{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria img {
+    margin-left:2%;
+    width: 25%;
+    border: 1px solid #ddd;
+    padding: 0.1em;
+    box-sizing:border-box;
+    margin-bottom: 20px;
+    margin-right:2%;
+}
