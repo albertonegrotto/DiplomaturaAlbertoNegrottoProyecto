@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-    secret : 'clavesecretanodejs',
+    secret : '0D618B084EEB48B7707F',
     resave: false ,
     saveUninitialized: true,
 }));
