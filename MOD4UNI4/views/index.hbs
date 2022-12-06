@@ -1,0 +1,13 @@
+<h1>Modulo 4 Unidad 4</h1>
+<h2>Bienvenido a {{title}}</h2>
+<br />
+{{#if conocido}}
+   <h4>Hola {{nombre}} <a href="/salir">Salir</a></h4>
+{{/if}}
+
+{{#unless conocido}}
+   <p>No te conozco</p>
+   <form action="/ingresar" method="post">
+      <input type="text" name="nombre"><button>Ingresar</button>
+   </form>
+{{/unless}}
