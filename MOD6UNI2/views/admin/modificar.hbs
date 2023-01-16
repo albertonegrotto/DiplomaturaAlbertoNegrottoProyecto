@@ -1,0 +1,32 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-6 offsset-3">
+            <h4>Modificar un Cliente</h4>
+            <form method="post" action="/admin/clientes/modificar">
+                <input type="hidden" value="{{cliente.id}}" name="id">
+                <div class="mb-3 row">
+                    <input type="text" value="{{cliente.nombre}}" class="form-control"
+                        placeholder="Nombre de la Empresa" name="nombre">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Actividad" name="actividad"
+                        rows="2">{{cliente.actividad}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Comentario" name="comentario"
+                        rows="6">{{cliente.comentario}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+    {{#if error}}
+    <div class="mensaje">
+        <h5>{{message}}</h5>
+    </div>
+    {{/if}}
+</div>
