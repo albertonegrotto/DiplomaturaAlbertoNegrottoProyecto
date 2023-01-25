@@ -1,0 +1,51 @@
+<div class="container" style="margin:50px auto">
+    <div class="row">
+        <p class="text-end" style="font-weight: bolder;">Hola {{ usuario }} ! <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesión <i
+                    class="fas fa-sign-out-alt"></i></a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <h3>Listado de Clientes</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href="/admin/clientes/agregar"><i class="fa fa-plus"></i>Nuevo</a>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:10%">
+        <div class="col">
+            <table class="table">
+
+                <head>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </head>
+
+                <tbody>
+                    {{#each clientes}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{nombre}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-left">
+                            <a href="/admin/clientes/modificar/{{id}}" title="Editar" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="/admin/clientes/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash"></i> </i>
+                            </a>
+                        </td>
+                    </tr>                             
+                    {{/each}}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>

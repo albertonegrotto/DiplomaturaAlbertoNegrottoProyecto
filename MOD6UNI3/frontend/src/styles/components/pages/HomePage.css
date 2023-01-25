@@ -1,0 +1,18 @@
+
+.bienvenidosderecha {
+    width: 50%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.bienvenidosizquierda {
+    width: 50%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 20px;
+}
