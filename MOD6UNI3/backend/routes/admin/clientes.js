@@ -109,7 +109,6 @@ router.post('/modificar', async (req, res, next) => {
          else{
             console.log('No hay Archivos');
             imagen_id = img_id; 
-            // Carga la original
          }
       }
       if (borrar_img_vieja && req.body.img_original) {
