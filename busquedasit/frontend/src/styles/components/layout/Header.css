@@ -1,0 +1,41 @@
+header {
+    background-color: white;
+    padding: 16px 0;
+    height: 100px;
+}
+
+header h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 100;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+#contenedor {
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.izquierdo {
+    float: left;
+}
+
+.derecho {
+    margin-top: 20px;
+    float: right;
+}
+
+#cuerpo {
+    padding-top: 5%;
+    padding-left: 1%;
+}
+
+.social {
+    display: inline;
+    padding-left: 10px;
+}

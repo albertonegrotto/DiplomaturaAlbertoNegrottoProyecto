@@ -1,0 +1,31 @@
+<div class="container" style="margin:60px auto">
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-6 offsset-3">
+            <h4>Agregar un nuevo Cliente</h4>
+            <form action="/admin/clientes/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Nombre de la Empresa" name="nombre">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Actividad" name="actividad" rows="2"></textarea>
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Comentario" name="comentario" rows="4"></textarea>
+                </div>
+                <div class="mb-3 row" >
+                   <label class="form-control">Imagen: <input type="file" class="form-control" name="imagen" id="imagen"/></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+     {{#if error}}
+        <div class="mensaje">
+           <h5>{{message}}</h5>
+        </div>
+    {{/if}}
+</div>
